@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.avenger.avengerapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_react"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".QsrApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".presentation.ui.activities.MainActivity"
+                  android:screenOrientation="userLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e384fd1a56077416b7a44aaa8fbbf97f075e8261" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
