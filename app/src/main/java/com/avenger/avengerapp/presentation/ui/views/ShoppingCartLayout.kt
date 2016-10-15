@@ -1,12 +1,14 @@
 package com.avenger.avengerapp.presentation.ui.views
 
 import android.content.Context
+import android.support.constraint.ConstraintLayout
 import android.support.v7.widget.LinearLayoutCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.FrameLayout
 import com.avenger.avengerapp.R
 import com.avenger.avengerapp.domain.models.OrderItem
 import com.avenger.avengerapp.presentation.ui.adapters.ShoppingCartAdapter
@@ -17,7 +19,7 @@ import kotlinx.android.synthetic.main.shopping_cart_layout.view.*
 /**
  * Created by RobGThai on 9/21/16.
  */
-class ShoppingCartLayout: LinearLayoutCompat {
+class ShoppingCartLayout: ConstraintLayout {
 
     val swipeManager: RecyclerViewSwipeManager = RecyclerViewSwipeManager()
 
